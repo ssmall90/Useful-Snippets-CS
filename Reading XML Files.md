@@ -11,32 +11,34 @@ Console.WriteLine(data);
 
 // example 2
 
-//using var reader = XmlReader.Create("books.xml");
-//reader.ReadToFollowing("book");
+```cs
+using var reader = XmlReader.Create("books.xml");
+reader.ReadToFollowing("book");
 
-//do
-//{
-//    reader.MoveToFirstAttribute();
-//    Console.WriteLine($"genre: {reader.Value}");
+do
+{
+    reader.MoveToFirstAttribute();
+    Console.WriteLine($"genre: {reader.Value}");
 
-//    reader.ReadToFollowing("title");
-//    Console.WriteLine($"title: {reader.ReadElementContentAsString()}");
+    reader.ReadToFollowing("title");
+    Console.WriteLine($"title: {reader.ReadElementContentAsString()}");
 
-//    reader.ReadToFollowing("author");
-//    Console.WriteLine($"author: {reader.ReadElementContentAsString()}");
+    reader.ReadToFollowing("author");
+    Console.WriteLine($"author: {reader.ReadElementContentAsString()}");
 
-//    reader.ReadToFollowing("price");
-//    Console.WriteLine($"price: {reader.ReadElementContentAsString()}");
+    reader.ReadToFollowing("price");
+    Console.WriteLine($"price: {reader.ReadElementContentAsString()}");
 
-//    Console.WriteLine("-------------------------------------------------");
+    Console.WriteLine("-------------------------------------------------");
 
 
-//}
-//while (reader.ReadToFollowing("book"));
+}
+while (reader.ReadToFollowing("book"));
 
 
 //Example 3
 
+```cs
 Console.WriteLine("Products");
 Console.WriteLine("----------------------");
 
