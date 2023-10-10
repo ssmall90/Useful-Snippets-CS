@@ -7,7 +7,7 @@ using var reader = XmlReader.Create("data.xml");
 reader.MoveToContent();
 var data = reader.ReadElementContentAsString();
 Console.WriteLine(data);
-
+```
 
 // example 2
 
@@ -34,7 +34,7 @@ do
 
 }
 while (reader.ReadToFollowing("book"));
-
+```
 
 //Example 3
 
@@ -57,3 +57,4 @@ while (reader.Read())
     };
     Console.Write(result);
 }
+```
