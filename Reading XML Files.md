@@ -2,10 +2,11 @@ using System.Xml;
 
 // example 1 
 
-//using var reader = XmlReader.Create("data.xml");
-//reader.MoveToContent();
-//var data = reader.ReadElementContentAsString();
-//Console.WriteLine(data);
+```cs
+using var reader = XmlReader.Create("data.xml");
+reader.MoveToContent();
+var data = reader.ReadElementContentAsString();
+Console.WriteLine(data);
 
 
 // example 2
